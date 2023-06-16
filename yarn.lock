@@ -3201,19 +3201,19 @@ onetime@^6.0.0:
   dependencies:
     mimic-fn "^4.0.0"
 
-oxyzen-sdk@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/oxyzen-sdk/-/oxyzen-sdk-0.0.8.tgz#56072feb455d3b940e102e3b005b4717c0a8f04e"
-  integrity sha512-wvN7X8MZdJ/UKaKBPFtNXFVuvMhbjQQc0TiKOT60n91841D13kfJZBLdUL3oE28+EWW9lQh0BjFwZOdecB3I4g==
+oxyzen-sdk@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/oxyzen-sdk/-/oxyzen-sdk-0.0.10.tgz#00e0e0571bd03446ebfb3427cd60f36ca6646915"
+  integrity sha512-DFol9Zk3NabWCYcjBTnjPTcPvC0RSeW0NFiKAB+augH1Mepyy70vPJIoIYzRetU2CgfuYdr6hulCW4RuyEfsew==
   dependencies:
     cmsn-noble "^3.1.6"
     debug "^4.3.4"
-    oxyzen_node "^0.0.1"
+    oxyzen_node "^0.0.2"
 
-oxyzen_node@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/oxyzen_node/-/oxyzen_node-0.0.1.tgz#f97410a4c1fe2b785cc1cf65217ae0b3951ea31f"
-  integrity sha512-FOn+z+Yd8pJEeh3fwTGOayrfy1kMSP2Wa57qWjdw3ccnanEzAOXImKS7LmaMdgQcMzrWv21M1oRKISIdNu6d+A==
+oxyzen_node@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/oxyzen_node/-/oxyzen_node-0.0.2.tgz#b3d85c2f0d06f6864630e543bef80845efb6afe9"
+  integrity sha512-eOJzMAFrElCc/luZX+bogkFK0WQ2GDzOJ4AorjNDb0jwy/BnN12T/U8BDIN55L6qMEoHXJG7LL0gaexNsuorzQ==
   dependencies:
     node-addon-api "^6.1.0"
     node-gyp "^9.4.0"
