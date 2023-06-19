@@ -3201,10 +3201,10 @@ onetime@^6.0.0:
   dependencies:
     mimic-fn "^4.0.0"
 
-oxyzen-sdk@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/oxyzen-sdk/-/oxyzen-sdk-0.0.10.tgz#00e0e0571bd03446ebfb3427cd60f36ca6646915"
-  integrity sha512-DFol9Zk3NabWCYcjBTnjPTcPvC0RSeW0NFiKAB+augH1Mepyy70vPJIoIYzRetU2CgfuYdr6hulCW4RuyEfsew==
+oxyzen-sdk@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.npmmirror.com/oxyzen-sdk/-/oxyzen-sdk-0.0.11.tgz#1e41c1560b6cfcce78c3333e7d177ef816b45b04"
+  integrity sha512-8222P/Ol9HOwyDtiiwJg4ytbrhuSMFp19JNCMMcNZZGwksVn0+QfnF5KDwr/iw8wFb2b17jCt5WZq0EKA/OK3w==
   dependencies:
     cmsn-noble "^3.1.6"
     debug "^4.3.4"

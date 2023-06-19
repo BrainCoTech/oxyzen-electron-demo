@@ -95,6 +95,7 @@ async function createWindow() {
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onIMUData', imu: imu });
           },
           onPPGData: (_: OzDevice, ppg: Map<String, any>) => {
+            // console.log(ppg);
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onPPGData', ppg: ppg });
           },
           onEEGData: (_: OzDevice, eeg: Map<String, any>) => {
