@@ -27,6 +27,7 @@ on:
 
 env:
   ALI_OSS_SECRET: ${{ secrets.ALI_OSS_SECRET }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}  # 使用密钥
 
 jobs:
   build-macos:
