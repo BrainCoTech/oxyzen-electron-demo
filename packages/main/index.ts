@@ -2,8 +2,10 @@ import { app, BrowserWindow, shell, ipcMain } from 'electron'
 import { release } from 'os'
 import { join } from 'path'
 import { OzDevice, oxyzen_electron } from 'oxyzen-sdk'
-import './samples/electron-store'
-import './samples/npm-esm-packages'
+// import debug from 'debug';
+// const oxyzLogger = debug('oxyz');
+// const ppgPrint = oxyzLogger.extend('ppg');
+const ppgPrint = console.warn;
 
 const oxyzRequest = 'oxyz-request';
 const oxyzResponse = 'oxyz-response';
@@ -95,7 +97,7 @@ async function createWindow() {
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onIMUData', imu: imu });
           },
           onPPGData: (_: OzDevice, ppg: Map<String, any>) => {
-            // console.log(ppg);
+            ppgPrint(`onPPGData >>> ${JSON.stringify({seqNum: ppg.seqNum, reportRate: ppg.reportRate, algoData: ppg.algoData})}`);
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onPPGData', ppg: ppg });
           },
           onEEGData: (_: OzDevice, eeg: Map<String, any>) => {
