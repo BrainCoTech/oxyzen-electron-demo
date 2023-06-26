@@ -2,9 +2,6 @@ import { app, BrowserWindow, shell, ipcMain } from 'electron'
 import { release } from 'os'
 import { join } from 'path'
 import { OzDevice, oxyzen_electron } from 'oxyzen-sdk'
-// import debug from 'debug';
-// const oxyzLogger = debug('oxyz');
-// const ppgPrint = oxyzLogger.extend('ppg');
 const ppgPrint = console.warn;
 
 const oxyzRequest = 'oxyz-request';

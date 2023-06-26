@@ -60,6 +60,7 @@ class OzActions {
         case 'onMeditation':
         case 'onAwareness':
         case 'onStress':
+          console.log(arg);
           this.onDeviceEvent(arg);
           break;
         default:
