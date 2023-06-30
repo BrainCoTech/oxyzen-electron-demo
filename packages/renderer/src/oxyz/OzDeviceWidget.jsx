@@ -32,6 +32,7 @@ class OzDeviceWidget extends Component {
         <p>contactState: {CONTACT_STATE[(this._safeInt(device.contactState))]}</p>
         <p>orientation: {ORIENTATION[(this._safeInt(device.orientation))]}</p>
         <p>meditation: {this._safeFloat(device.meditation)}</p>
+        <p>calmness {this._safeFloat(device.calmness)}</p>
         <p>awareness: {this._safeFloat(device.awareness)}</p>
         <p>stress:{this._safeFloat(device.stress)}</p>
         <p>BrainWave: {JSON.stringify(device.stats)}</p>

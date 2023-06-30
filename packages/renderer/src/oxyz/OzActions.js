@@ -58,6 +58,7 @@ class OzActions {
         case 'onIMUData':
         case 'onPPGData':
         case 'onMeditation':
+        case 'onCalmness':
         case 'onAwareness':
         case 'onStress':
           console.log(arg);
@@ -194,6 +195,10 @@ class OzActions {
         device.meditation = arg.meditation.toFixed(1);
         this._notifyUpdateDevices();
         break;
+      case 'onCalmness':
+        device.calmness = arg.calmness.toFixed(1);
+        this._notifyUpdateDevices();  
+        break;
       case 'onAwareness':
         device.awareness = arg.awareness.toFixed(1);
         this._notifyUpdateDevices();
@@ -225,25 +230,10 @@ class OzActions {
         return { id: e.id, name: e.name };
       });
     console.log('_updateDeviceRecords', records);
-    // deviceStore.set('oxyzRecords', records);
   }
 
   static _autoConnect() {
     console.log('loadDeviceRecords');
-    // var deviceId = '58:94:b2:00:02:39';
-    // deviceId     = '58:94:b2:00:a5:7f';
-    // this._sendCmd('connect', { deviceId: deviceId });
-    // const devices = deviceStore.get('oxyzRecords');
-    // if (Array.isArray(devices) && devices.length > 0) {
-    //   console.log('autoConnect');
-    //   devices.forEach((device) => {
-    //     if (device.id && device.name) {
-    //       device.store = true;
-    //       this.connect(device);
-    //     }
-    //   });
-    //   this._notifyUpdateDevices();
-    // }
   }
 }
 

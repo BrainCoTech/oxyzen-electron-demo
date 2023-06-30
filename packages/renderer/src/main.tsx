@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
-import './samples/electron-store'
+// import './samples/electron-store'
 import './styles/index.css'
 import OzActions from './oxyz/OzActions'
 import App from './App'
@@ -29,10 +29,9 @@ window.ipcRenderer.on('main-process-message', (_event, ...args) => {
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, verisons[type])
   }
-  OzActions.initSDK();
 })
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   console.log('DOMContentLoaded');
-//   OzActions.initSDK();
-// });
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('DOMContentLoaded');
+  OzActions.initSDK();
+});
