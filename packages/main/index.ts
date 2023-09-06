@@ -121,6 +121,21 @@ async function createWindow() {
       case 'disconnect':
         await oxyzen.disconnect(arg.deviceId);
         break;
+      case 'getConnectivity':
+        var deviceId = arg.deviceId;
+        var connectivity = oxyzen.getConnectivity(deviceId);
+        event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onConnectivityChanged', connectivity: connectivity });
+        break;
+      case 'getContactState':
+        var deviceId = arg.deviceId;
+        var contactState = oxyzen.getContactState(deviceId);
+        event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onContactStateChanged', contactState: contactState });
+        break;
+      case 'getOrientation':
+        var deviceId = arg.deviceId;
+        var orientation = oxyzen.getOrientation(deviceId);
+        event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onOrientationChanged', orientation: orientation });
+        break;
       case 'disconnectAll':
         await oxyzen.disconnectAll();
       default:

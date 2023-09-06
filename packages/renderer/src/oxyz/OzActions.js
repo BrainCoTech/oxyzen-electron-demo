@@ -129,6 +129,15 @@ class OzActions {
     this._updateDeviceRecords();
   }
 
+  static getDeviceState(device) {
+    if (!device) return;
+    var deviceId = device.id;
+    if (!deviceId) return;
+    this._sendCmd('getConnectivity', { deviceId: deviceId });
+    this._sendCmd('getContactState', { deviceId: deviceId });
+    this._sendCmd('getOrientation', { deviceId: deviceId });
+  }
+
   static disconnectAll() {
     _oxyzMap.clear();
     _oxyzMap.forEach((device) => {
@@ -160,7 +169,7 @@ class OzActions {
         this._notifyUpdateDevices();
         break;
       case 'onConnectivityChanged':
-        console.log('onConnectivityChanged', arg.connectivity);
+        // console.log('onConnectivityChanged', arg.connectivity);
         device.connectivity = arg.connectivity;
         if (device.connectivity == CONNECTIVITY['connected']) {
           if (!device.store) {
