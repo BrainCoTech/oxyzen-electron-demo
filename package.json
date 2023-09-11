@@ -18,10 +18,10 @@
         "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
     },
     "dependencies": {
+        "oxyzen-sdk": "^0.1.7",
         "@mantine/core": "^4.1.0",
         "@mantine/hooks": "^4.1.0",
         "electron-store": "^8.0.1",
-        "oxyzen-sdk": "^0.1.1",
         "tabler-icons-react": "^1.43.0"
     },
     "devDependencies": {

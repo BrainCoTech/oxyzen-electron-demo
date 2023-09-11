@@ -3210,10 +3210,10 @@ onetime@^6.0.0:
   dependencies:
     mimic-fn "^4.0.0"
 
-oxyzen-sdk@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/oxyzen-sdk/-/oxyzen-sdk-0.1.1.tgz#442780259bb1f1df41a64f2cc99da047cb76da71"
-  integrity sha512-sicjfJVTr9EPD0AoRdiIYH+yA1yRmZ+leu6tgviZPCUcLcHEUEo+ZqlfcfluUn/VG7IPfYckNriRR4+d9u/L9w==
+oxyzen-sdk@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/oxyzen-sdk/-/oxyzen-sdk-0.1.7.tgz#4b810ec91c3ab7111cc78fb9754af80f8e905e36"
+  integrity sha512-e1tR+k4gTiWhLe1v0mefKVGJ9NjRYFmJ4YE4XaoxU1Rs2/KoVX5LN1QWgujE9TWIiitVigw2iwUDEct/4nWIEQ==
   dependencies:
     cmsn-noble "^3.1.6"
     debug "^4.3.4"
