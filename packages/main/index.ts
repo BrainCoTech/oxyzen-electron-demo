@@ -103,14 +103,11 @@ async function createWindow() {
           onBrainWave: (_: OzDevice, stats: Map<String, any>) => {
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onBrainWave', stats: stats });
           },
-          onMeditation: (_: OzDevice, value: Number) => {
-            event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onMeditation', meditation: value });
+          onAttention: (_: OzDevice, value: Number) => {
+            event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onAttention', attention: value });
           },
-          onCalmness: (_: OzDevice, value: Number) => {
-            event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onCalmness', calmness: value });
-          },
-          onAwareness: (_: OzDevice, value: Number) => {
-            event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onAwareness', awareness: value });
+          onMeditation: (_: OzDevice, meditation: Number, calmness: Number, awareness: Number) => {
+            event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onMeditation', meditation: meditation, calmness: calmness, awareness: awareness });
           },
           onStress: (_: OzDevice, value: Number) => {
             event.reply(oxyzResponse, { deviceId: deviceId, cmd: 'onStress', stress: value });
